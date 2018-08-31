@@ -16,9 +16,14 @@ Mock.bootstrap()
 
 const routes = [
   { path: '/login', component: Login, hidden: true },
-  { path: '/', component: Layout, hidden: true },
-  { path: '/table', component: Table },
-  { path: '/form', component: Form }
+  {
+    path: '/',
+    component: Layout,
+    children: [
+      { path: '/table', component: Table },
+      { path: '/form', component: Form }
+    ]
+  }
 ]
 const router = new VueRouter({
   routes

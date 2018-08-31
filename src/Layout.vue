@@ -1,6 +1,6 @@
 <template>
     <div>
-        <el-container style="height: 500px; border: 1px solid #eee">
+        <el-container style="height: 620px; border: 1px solid #eee">
             <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
                 <el-menu>
                     <el-submenu index="1">
@@ -40,7 +40,7 @@
                 <el-header style="text-align: right; font-size: 12px">
                     我是一个导航栏
                 </el-header>
-                <el-main>
+                <el-main style="background-color:white">
                     <router-view></router-view>
                 </el-main>
             </el-container>
@@ -76,5 +76,8 @@ export default {
 
 .el-aside {
   color: #333;
+}
+a:link {
+  text-decoration: none;
 }
 </style>

@@ -30,7 +30,14 @@ export default {
             requestLogin({ userName: this.form.userName, password: this.form.password })
                 .then(response => {
                     if (response.code === 200) {
+                        localStorage.setItem('user', response.user)
                         this.$router.push({ path: '/' })
+                    } else {
+                        this.$notify({
+                            title: '错误',
+                            message: response.msg,
+                            type: 'error'
+                        })
                     }
                 })
         }

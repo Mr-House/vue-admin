@@ -3,7 +3,7 @@
         <div>
             <el-button type="primary" style="float:right" @click="add">新增</el-button>
         </div>
-        <el-table :data="list">
+        <el-table :data="list" height="100%">
             <el-table-column prop="name" label="姓名"> </el-table-column>
             <el-table-column prop="birthday" label="生日"></el-table-column>
         </el-table>
