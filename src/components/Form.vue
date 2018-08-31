@@ -24,7 +24,7 @@ export default {
     },
     methods: {
         save() {
-            console.info(this.form)
+            console.log(this.form)
         },
         back() {
             this.$router.push('/table')
