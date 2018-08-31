@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-form :model="form" class="login-form" label-position="left" label-width="0px">
-            <h3>系统登录</h3>
+            <h3 class="title">系统登录</h3>
             <el-form-item>
                 <el-input type="text" v-model="form.userName"></el-input>
             </el-form-item>
@@ -46,11 +46,15 @@ export default {
 </script>
 <style scoped>
 .login-form {
-  width: 400px;
+  width: 360px;
   background-color: whitesmoke;
   padding: 30px;
   margin-left: 400px;
   margin-top: 160px;
+}
+.title {
+  margin-bottom: 40px;
+  color: #505458;
 }
 </style>
 

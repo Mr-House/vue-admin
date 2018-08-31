@@ -22,6 +22,7 @@ body {
   margin: 0px;
   padding: 0px;
   background: #1f2d3d;
+  font-size: 14px
 }
 </style>
 
