@@ -31,7 +31,7 @@ export default {
                 .then(response => {
                     if (response.code === 200) {
                         localStorage.setItem('user', response.user)
-                        this.$router.push({ path: '/' })
+                        this.$router.push({ path: '/table' })
                     } else {
                         this.$notify({
                             title: '错误',
