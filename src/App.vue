@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <router-link to="/login"></router-link>
   </div>
 </template>
 <script>
@@ -22,7 +21,7 @@ body {
   margin: 0px;
   padding: 0px;
   background: #1f2d3d;
-  font-size: 14px
+  font-size: 14px;
 }
 </style>
 
